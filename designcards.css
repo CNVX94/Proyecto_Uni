@@ -1,0 +1,93 @@
+body{
+    background-color: #092834;
+    color: #f0f7D4;
+    margin: 0;
+    font-family: "PixelFont", sans-serif;
+}
+main{
+    max-width: 1000px;
+    margin: 100px auto 50px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+}
+.seccion1, 
+.seccion2{
+    background-color: #41616D;
+    background-size: cover;
+    border: 4px solid #700cbc;
+    padding: 40px;
+    border-radius: 10px;
+    text-align: center;
+}
+h1{
+    font-size: 36px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    margin-bottom: 20px;
+
+}
+button{
+    background: #559E54;
+    height: 100px;
+    width: 100px;
+    font-size: 40px;
+    color: black;
+    font-weight: bold;
+}
+button:hover{
+cursor: pointer;
+box-shadow: 0 0 10px rgba(30, 253, 259,0.7);
+transform: scale(1.1);
+}
+.estadisticas{
+    border: 1px solid #fff;
+    height: 105px;
+    border-radius: 5px;
+    padding: 10px 30px;
+    box-sizing: border-box;
+}
+#contenedorBotones {
+    display: flex;
+    justify-content: center; /* Para alinear horizontalmente los botones */
+    border-radius: 10px;
+  }
+  
+  #miBoton, #miBotonVolver {
+    margin: 5px; /* Espacio entre los botones (opcional) */
+  }
+  
+#miBoton {
+    background-color: #559E54; /* Cambia el color de fondo */
+    color: #fff; /* Cambia el color del texto */
+    border: 2px solid #700cbc; /* Cambia el borde */
+    border-radius: 5px; /* Agrega esquinas redondeadas */
+    padding: 10px 20px; /* Ajusta el espacio interior del botón */
+    font-size: 30px; /* Cambia el tamaño del texto */
+    height: 100px;
+    width: 100px;
+  }
+  #miBotonVolver {
+    background-color: #559E54; /* Cambia el color de fondo */
+    color: #fff; /* Cambia el color del texto */
+    border: 2px solid #700cbc; /* Cambia el borde */
+    border-radius: 5px; /* Agrega esquinas redondeadas */
+    padding: 10px 20px; /* Ajusta el espacio interior del botón */
+    font-size: 15px; /* Cambia el tamaño del texto */
+    height: 100px;
+    width: 100px;
+  }
+  
+  
+img{
+    width: 80%;
+    
+}
+
+@media screen and (max-width: 850px) {
+
+    main{
+        grid-template-columns: 1fr 1fr;
+    }
+    
+}

@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+    <title>Pac-Man</title>
+    
+    <style>
+      #gameCanvas {
+        box-shadow: 10px 10px 20px black;
+      }
+      h1 {
+        text-align: center;
+        font-family: comic sans MS;
+        color: lightgrey;
+      }
+      body {
+        display: flex;
+        justify-content: center;
+        overflow: hidden;
+        height: 100vh;
+        background: linear-gradient(
+          0deg,
+          rgb(17, 51, 161) 0%,
+          rgb(136, 34, 195) 100%
+        );
+      }
+      #contenedorBotones {
+    display: flex;
+    justify-content: center; /* Para alinear horizontalmente los botones */
+    border-radius: 10px;
+    margin-top: 100px;
+    margin-bottom: 400px;
+  }
+  
+  #miBoton, #miBotonVolver {
+    margin: 5px; /* Espacio entre los botones (opcional) */
+  }
+    </style>
+  </head>
+  <body>
+    <div>
+      <h1>Pac-Man</h1>
+      <canvas id="gameCanvas"></canvas>
+    </div>
+    <script src="srcpcman/Game.js" type="module"></script>
+    
+  </body>
+  <div id="contenedorBotones">
+    <button id="miBoton"><i class="bi bi-arrow-clockwise"></i></button>
+    <button id="miBotonVolver">Volver</button>
+  <script>
+    var miBoton = document.getElementById('miBoton');
+
+// Agrega un controlador de eventos al botón para recargar la página cuando se haga clic
+miBoton.addEventListener('click', function() {
+    location.reload();
+});
+ // Agrega un controlador de eventos al botón
+ miBotonVolver.addEventListener("click", function() {
+        // Redirige a otro.html
+        window.location.href = "index.html";
+    });
+  </script>
+  </div></html>

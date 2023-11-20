@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Universidad</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+    <!-- Enlace al archivo CSS -->
+    <link rel="stylesheet" type="text/css" href="./cssmenu/estilosmenu.css">
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+	
+	<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+
+	<script type="text/javascript">emailjs.init('_h8Tpncx_Dk5z388V')</script>
+
+
+</head>
+<body>
+	<div class="background-image"></div>
+    <header>
+        <img class="logounam" src="./imgmenu/Portada.jpg" alt="">
+		
+        <button class="menu-abierto" id="abrir"><i class="bi bi-list"></i></button>
+
+		<nav class="nav" id="nav">
+			<button class="cerrar-menu" id="cerrar"><i class="bi bi-x"></i></button>
+			<ul class="nav-lista">
+				<li><a href="Pokecards.html">Memorama</a></li>
+				<li><a href="snakegame.html">Snake</a></li>
+				<li><a href="indexpcman.html">Pac-Man</a></li>
+				<li><a href="#contacto" id="enlace-contacto">Contacto</a></li>
+			</ul>
+		</nav>
+		
+		<script>
+			// Obtenemos el enlace "Contacto" por su ID
+			var enlaceContacto = document.getElementById("enlace-contacto");
+		
+			// Agregamos un evento de clic al enlace "Contacto" para cerrar el menú
+			enlaceContacto.addEventListener("click", function() {
+				// Código para cerrar el menú (puedes usar el mismo código que usas para cerrar el menú cuando se hace clic en el botón de cerrar)
+				var nav = document.getElementById("nav");
+				nav.classList.remove("visible"); // Esto es solo un ejemplo, puedes ajustarlo según cómo estés manejando la apertura y cierre del menú.
+			});
+		</script>
+		
+    </header>
+
+    <!-- Enlace al archivo JavaScript -->
+	<section id="juegos">
+    <section class="home" id="Home">
+    	<div class="container">
+    		<h2 class="subtitle">Juegos Locales:</h2>
+    		<div class="container-table">
+    			<div class="card-container1">
+    				<figure>
+    					<img class="image1" src="./imgmenu/juego1.jpg">
+    				</figure>
+    				<div class="contenido">
+    				<h2 class="titulojuego">Memorama:</h2>
+    				<h3 class="descjuego">Divertido juego de memorama ambientado en Pokemon</h3>
+    				<p>...</p>
+    				<a class="bot" href="Pokecards.html">¡Jugar Ya!</a>
+    			</div>
+    			</div>
+    			<div class="card-container2">
+    				<figure>
+    					<img class="image2" src="./imgmenu/juego2.jpg">
+    				</figure>
+    				<div class="contenido">
+    				<h2 class="titulojuego">Snake Halloween</h2>
+    				<h3 class="descjuego">Diviertete con esta divertida versión de snake ambientada en la temporada</h3>
+    				<p>...</p>
+    				<a class="bot" href="snakegame.html">¡Jugar Ya!</a>
+    			</div>
+    			</div>
+    			<div class="card-container3">
+    				<figure>
+    					<img class="image3" src="./imgmenu/juego3.jpg">
+    				</figure>
+    				<div class="contenido">
+    				<h2 class="titulojuego">Pac-Man</h2>
+    				<h3 class="descjuego">Juega esta versión de un juego que no podía faltar</h3>
+    				<p>...</p>
+    				<a class="bot" href="indexpcman.html">¡Jugar Ya!</a>
+    			</div>
+    			</div>
+    		</div>
+    	</div>
+		<div id="Separador">
+
+		</div>
+    	<div class="container">
+    		<h2 class="subtitle">Juegos En Línea:</h2>
+    		<div class="container-table">
+    			<div class="card-container1">
+    				<figure>
+    					<img class="image1" src="./imgmenu/TETRIS.jpg">
+    				</figure>
+    				<div class="contenido">
+    				<h2 class="titulojuego">Tetris:</h2>
+    				<h3 class="descjuego"> El Tetris es un juego de rompecabezas que desafía tu habilidad para organizar y encajar piezas geométricas en un espacio limitado. </h3>
+    				<p>...</p>
+    				<a class="bot" href="https://tetris.com/play-tetris/?utm_source=top_nav_link&utm_medium=webnav&utm_campaign=playNow_btm_tst&utm_content=text_play_now">¡Jugar Ya!</a>
+    			</div>
+    			</div>
+    			<div class="card-containerx">
+    				<figure>
+    					<img class="image2" src="./imgmenu/xbox.jpeg">
+    				</figure>
+    				<div class="contenido">
+    				<h2 class="titulojuego">XCLOUD</h2>
+    				<h3 class="descjuego">
+						xCloud es un servicio de juego en la nube desarrollado por Microsoft que permite a los jugadores acceder y jugar a una amplia variedad de videojuegos </h3>
+    				<p>...</p>
+    				<a class="bot" href="https://www.xbox.com/es-MX/play">¡Jugar Ya!</a>
+    			</div>
+    			</div>
+    			<div class="card-container3">
+    				<figure>
+    					<img class="image3" src="./imgmenu/logo.png">
+    				</figure>
+    				<div class="contenido">
+    				<h2 class="titulojuego">elgooG</h2>
+    				<h3 class="descjuego">Visita la página de minijuegos y curiosidades de Google</h3>
+    				<p>...</p>
+    				<a class="bot" href="https://elgoog.im/">¡Jugar Ya!</a>
+    			</div>
+    			</div>
+				
+    		</div>
+			
+			</head>
+			
+			
+			
+    	</div>
+		<div class="container">
+			<h2 class="subtitle">Visita También:</h2>	
+			  <!-- Swiper -->
+			  <div class="swiper mySwiper">
+				<div class="swiper-wrapper">
+				  <div class="swiper-slide">
+					<a href="https://www.friv.com/">
+						<img class="imgswipe" src="./imgmenu/FRIV.jpg" alt="Descripción de la imagen 1">
+					  </a>
+				  </div>
+				  <div class="swiper-slide">
+					<a href="https://www.cooljuegos.com/">
+						<img class="imgswipe" src="./imgmenu/cooljuegos.jpg">
+					</a>
+				  </div>
+				  <div class="swiper-slide">
+					<a href="https://www.minijuegos.com/">
+						<img class="imgswpie" src="./imgmenu/minijuegos.jpeg">
+					</a>
+				  </div>
+				</div>
+				<div class="swiper-button-next"></div>
+				<div class="swiper-button-prev"></div>
+				<div class="swiper-pagination"></div>
+			  </div>
+		</div>
+		<div class="container">
+			<h2 class="subtitle">Agradecimiento al canal DOM_CODERS</h2>	
+			<div id="player"></div>
+
+		</div>
+			<div id="Separador">
+				
+			</div>
+
+		
+    	
+    </section>
+</section>
+<div id="Separador">
+
+</div>
+<section id="contacto" class="contacto">
+	<div class="contenido-seccion">
+		<h2> CONTACTO</h2>
+		<div class="fila">
+			<div class="col">
+				<form id="form">
+					<div class="field">
+						<label for="from_name">Nombre: </label>
+						<input type="text" name="from_name" id="from_name">
+					</div>
+					<div class="field">
+						<label for="message">Mensaje: </label>
+						<input type="text" name="message" id="message">
+					</div>
+					<div class="field">
+						<label for="email_id">Email: </label>
+						<input type="text" name="email_id" id="email_id">
+					</div>
+					<button type="submit" id="button" value="Send Email">
+						Enviar Mensaje<i class="bi bi-send"></i>
+						<span class="overlay">
+
+						</span>
+					</button>
+				</form>
+
+			</div>
+			
+			<div class="col">
+				<div class="info">
+					<h2>¿Tienes alguna recomendación?</h2>
+					<p>Contacta con nosotros para apoyar al crecimiento de la página</p>
+					<img src="./imgmenu/PNI.jpeg">
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
+<div class="salida">
+<h4>Esta página no tiene ningun animo de lucro, la empresa PlayNowInnovations tiene sus derechos reservados.</h4>
+</div>
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+<script src="https://www.youtube.com/iframe_api"></script>
+<script src="./jsmenu/funcionesmenu.js"></script>
+</body>
+
+</html>

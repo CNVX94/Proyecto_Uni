@@ -1,0 +1,386 @@
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: sans-serif;
+}
+.background-image {
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	z-index: -1; /* Situar la imagen detrás de todo el contenido */
+	background-image: url('https://jooinn.com/images/white-brick-wall-3.jpg'); /* Ruta de tu imagen */
+	background-size: cover;
+	filter: blur(4px); /* Aplicar efecto de desenfoque a la imagen */
+  }
+  
+
+header{
+	display: flex;
+	justify-content: space-between;
+	padding: 2rem;
+	background-color: #027159bd;
+	margin-bottom: 20px;
+
+}
+.logounam{
+	max-width: 10rem;
+	align-items:normal;
+	box-shadow: 0 0 10px 5px rgba(255, 255, 255, 0.7); /* Creando el efecto de neón */
+  	filter: brightness(150%);
+}
+.Separador{
+	margin-bottom: 20px; /* Espacio entre los divs */
+	padding: 10px; /* Espacio alrededor del contenido dentro de cada div */
+  
+}
+.Textodivizor {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+	color: black;
+	margin-top: 20p;
+}
+.nav-lista{
+	display: flex;
+	list-style-type: none;
+	margin-top: 35px;
+	gap: 1rem;
+	color: #fff;
+	
+}
+.nav-lista li a{
+	text-decoration: none;
+	color: #73d8c2;
+	font-weight: bolder;
+	font-size: 20px;
+	text-shadow: 2px 2px 2px #000;
+}
+nav ul li a:hover {
+	color: #fff; /* Cambiar el color del texto al pasar el mouse */
+  }
+.menu-abierto,
+	.cerrar-menu{
+		display: none;
+	}
+	
+@media screen and (max-width: 550px) {
+
+	.home, .container, .card-container{
+		width: auto;
+		margin: auto;
+		
+
+	}
+
+
+	.menu-abierto,
+	.cerrar-menu{
+		display: block;
+		border: 0;
+		font-size: 1.25rem;
+		background-color: transparent;
+		cursor: pointer;
+		color: aliceblue;
+	}
+
+	.nav{
+		opacity: 0;
+		visibility: hidden;
+
+		display: flex;
+		flex-direction: column;
+		align-items: end;
+		gap: 1rem;
+		position: absolute;
+		top: 0;
+		right: 0;
+		bottom: 0;
+		background-color:  #027159;
+		padding: 2rem;
+		box-shadow: 0 0 0 100vmax rgba(0,0,0,.5);
+
+	}
+	.nav.visible{
+		opacity: 1;
+		visibility: visible;
+	}
+	.nav-lista{
+		flex-direction: column;
+		align-items: end;
+	}
+	.nav-lista li a{
+		color: rgb(115, 216, 194);
+	}
+
+
+
+}
+
+.container{
+	width: 100%;
+	max-width: 1200px;
+	margin: 0 auto;
+	overflow: hidden;
+	text-align: center;
+	margin-bottom: 50px; /* Espacio entre los divs */
+	padding: 10px; /* Espacio alrededor del contenido dentro de cada div */
+  	background-color: #00000056;
+}
+.Home{
+	background-color: rgb(198,150,74);
+
+
+}
+
+.container-table{
+	padding-top: 60px;
+	display: flex;
+	flex-wrap: wrap;
+	gap: 3em;
+	justify-content: space-evenly;
+	align-items: center;
+
+}
+.subtitle {
+	color: transparent; /* Hacemos el texto transparente */
+	font-family: sans-serif;
+	font-size: 48px;
+	margin-bottom: 10px;
+	padding-top: 10px;
+	background-image: linear-gradient(45deg, #ff0000, #ff7700, #ffff00, #00ff00, #0000ff, #ff00ff, #ff0000); /* Gradiente de colores */
+	-webkit-background-clip: text; /* Hacemos que el gradiente solo se aplique al texto */
+	-webkit-text-fill-color: transparent; /* Hacemos el texto transparente */
+	text-shadow: 2px 2px 2px rgba(255, 255, 255, 0.8); /* Sombra suave */
+  }
+  
+
+.titulojuego {
+	margin-top: 20px;
+	margin-bottom: 10px;
+	font-size: 20px; /* Ajusta el tamaño de la fuente según sea necesario */
+	font-weight: bold; /* Texto en negrita */
+	background-image: linear-gradient(45deg, #ff0000, #ff7700, #ffff00, #00ff00, #0000ff, #ff00ff, #ff0000); /* Gradiente multicolor */
+	-webkit-background-clip: text; /* Hace que el gradiente solo se aplique al texto */
+	-webkit-text-fill-color: transparent; /* Hace el texto transparente */
+	text-shadow: 2px 2px 2px #fafafa; /* Sombra suave */
+  }
+.descjuego{
+	text-align: left;
+	font-size: 20px;
+	text-shadow: 0 0 5px rgba(255, 255, 255, 0.5);
+}
+.card-container1{
+	background-color: #2470a3bb;
+	text-align: center;
+	border-radius: 10px;
+	width: 330px;
+	padding: 40px;
+	font-family: sans-serif;
+	
+}
+.card-container2{
+	background-color: rgba(240, 123, 94, 0.719);
+	text-align: center;
+	border-radius: 10px;
+	width: 330px;
+	padding: 40px;
+	font-family: sans-serif;
+
+}
+.card-container3{
+	background-color:  rgba(85, 197, 150, 0.644);
+	text-align: center;
+	border-radius: 10px;
+	width: 330px;
+	padding: 40px;
+	font-family: sans-serif;
+	margin-bottom: 10px;
+}
+.card-containerx{
+	background-color:  rgba(0, 255, 106, 0.623);
+	text-align: center;
+	border-radius: 10px;
+	width: 330px;
+	padding: 40px;
+	font-family: sans-serif;
+	margin-bottom: 10px;
+}
+
+.bot{
+	border: 2px solid #151D3B;
+	border-radius: 50px;
+	width: fit-comtent;
+	font-size: 17px;
+	font-family: sans-serif;
+	margin: 20px auto;
+	padding: 10px 22px;
+	display: block;
+	text-decoration: none;
+	color: rgb(0, 0, 0);
+	font-weight: bold;
+	background-color: rgba(255, 255, 255, 0.466);
+}
+
+.bot:hover{
+	background: rgb( 243, 243, 243);
+	color: black;
+
+}
+
+.image1{
+	max-width: 10rem;
+	box-shadow: 0 0 10px 5px rgba(255, 255, 255, 0.7); /* Creando el efecto de neón */
+	filter: brightness(100%);
+}
+.image2{
+	max-width: 10rem;
+	box-shadow: 0 0 10px 5px rgba(255, 255, 255, 0.7); /* Creando el efecto de neón */
+	filter: brightness(100%);
+}
+.image3{
+	max-width: 10rem;
+	box-shadow: 0 0 10px 5px rgba(255, 255, 255, 0.7); /* Creando el efecto de neón */
+	filter: brightness(100%);
+}
+.contacto{
+	background-color:  rgba(43, 97, 75, 0.63);
+	color: #000;
+
+	padding: 150px 0;
+
+}
+.contacto .contenido-seccion{
+	max-width: 1100px;
+	margin: auto;
+	background-color:  rgb(68, 158, 121);
+
+}
+.contacto .contenido-seccion .fila .col .form .field{
+
+}
+.contacto form{
+	display: grid;
+	grid-column: 1 / 3;
+	font-size: 20px;
+	font-weight: bold;
+	text-shadow: 2px 2px 2px #fff;
+}
+.contacto h2{
+	font-size: 30px;
+	font-family: sans-serif;
+	text-align: left;
+	padding: 20px 0;
+	text-shadow: 2px 2px 2px #fff;
+}
+.contacto .fila{
+	display: flex;
+}
+.contacto .col{
+	width: 50%;
+	padding: 10px;
+	position: relative;
+}
+
+.contacto .col .info {
+	position: absolute;
+	top: 40%;
+	background-color: rgb(89, 207, 158);
+	padding: 20px;
+	width: 350px;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	margin-bottom: 20px;
+	font-size: 20px;
+	font-weight: bold;
+	text-shadow: 2px 2px 2px #fff;
+	text-align: center; /* Alineación del contenido */
+  }
+  
+  .contacto .col .info img {
+	max-width: 50%; /* Ajusta el ancho máximo de la imagen */
+	height: auto; /* Mantiene la proporción original de la imagen */
+	margin-bottom: 5px; /* Espacio inferior entre la imagen y el resto del contenido */
+	margin-top: 10px;
+  }
+
+.contacto .col input{
+	display: block;
+	width: 100%;
+	padding: 18px;
+	border: none;
+	margin-bottom: 20px;
+	background-color: #027159;
+	color: white;
+	font-size: 28px;
+}
+
+.contacto button{
+	cursor: pointer;
+	background-color: transparent;
+	border: 2px solid #fff;
+	width: fit-content;
+	display: block;
+	margin: 20px auto;
+	padding: 10px 22px;
+	font-size: 16px;
+	color: #fff;
+	position: relative;
+	z-index: 10;
+}
+
+.contacto button .overlay{
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 0;
+	height: 100%;
+	background-color: #027159;
+	z-index: -1;
+	transition: 1s;
+	margin: 0px;
+}
+
+.contacto button:hover .overlay{
+	width: 100%;
+
+}
+
+@media screen and (max-width: 800px){
+
+	.contacto, .contenido-seccion, .col, .fila{
+		width: auto;
+		margin: auto;
+	}
+	.contacto .fila{
+		display: block;
+	}
+
+	.contacto .fila .col{
+		width: 100%;
+		margin-top: 100px;
+	}
+}
+
+
+/*Swiper*/
+.swiper {
+	width: 25%;
+	height: auto;
+  }
+
+  .swiper-slide {
+	text-align: center;
+	font-size: 18px;
+	background: #fff;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+  }
+
+  .swiper-slide img {
+	display: block;
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+  }
